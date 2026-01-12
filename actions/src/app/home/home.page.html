@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Atividades - Flávio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-button id="click-trigger">Atividades</ion-button>
+<ion-popover trigger="click-trigger" triggerAction="click">
+  <ng-template>
+    <ion-content class="ion-padding">Olá Flávio</ion-content>
+  </ng-template>
+</ion-popover>
+
+<ion-button id="hover-trigger">Aprendizado</ion-button>
+<ion-popover trigger="hover-trigger" triggerAction="hover">
+  <ng-template>
+    <ion-content class="ion-padding">Mais aprendizado!</ion-content>
+  </ng-template>
+</ion-popover>
+
+</ion-content>
